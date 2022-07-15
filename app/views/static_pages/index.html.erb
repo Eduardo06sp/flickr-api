@@ -5,3 +5,12 @@
 
   <%= form.submit 'Search' %>
 <% end %>
+
+<% if @user_photos.nil? %>
+  <p>Please enter a search query!</p>
+<% elsif @user_photos.empty? %>
+  <p>No photos were found!</p>
+<% else %>
+  <div class="search-results">
+  </div>
+<% end %>
