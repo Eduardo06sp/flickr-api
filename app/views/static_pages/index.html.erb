@@ -8,7 +8,7 @@
 
 <% if @user_photos.nil? %>
   <p>Please enter a search query!</p>
-<% elsif @user_photos.empty? %>
+<% elsif @user_photos.none? %>
   <p>No photos were found!</p>
 <% else %>
   <div class="search-results">
